@@ -1,0 +1,19 @@
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    color: var(--text);
+    transition-property: color;
+    transition-duration: var(--duration);
+}
+
+.button:hover{
+    color: var(--text-emph);
+}
+
+.button_uppercase{
+    text-transform: uppercase;
+}

@@ -1,0 +1,8 @@
+:root{
+    
+    /* timings */
+    --duration: 250ms;
+
+    --text: rgb(97, 97, 97);
+    --text-emph: rgb(65, 65, 65);
+}
