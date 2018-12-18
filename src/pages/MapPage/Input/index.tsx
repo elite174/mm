@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 import './map-page-input';
-import Button from '../../../../elements/Button';
+import Button from '../../../elements/Button';
 
 class MapPageInput extends React.PureComponent {
     state = {
@@ -15,7 +15,7 @@ class MapPageInput extends React.PureComponent {
                 className='map-page-input__input'
                 value={this.state.word}
                 onChange={this.onChangeHandler}></input>
-            <Button onClick={this.onChangeHandler} icon='plus' />
+            <Button onClick={this.onChangeHandler} icon='plus' caption='Добавить' />
         </div>)
     }
 }

@@ -1,4 +1,4 @@
-import Map from "./Map";
+import Map from "./mindmap";
 
 class Store {
     maps = {}

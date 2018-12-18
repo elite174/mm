@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import './icon.css';
 import { EMPTY_OBJECT } from '../../constants';
 import { withMods } from '../../utils';

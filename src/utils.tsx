@@ -1,7 +1,7 @@
 import { EMPTY_OBJECT } from "./constants";
 
 export const withMods = (block = '', mods = EMPTY_OBJECT) => {
-    const m = [];
+    const m: Array<any> = [];
     for (let key in mods) {
         if (mods[key] === true) {
             m.push(`${block}_${key}`)

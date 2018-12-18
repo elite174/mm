@@ -1,7 +1,7 @@
 import Node from "./models/node";
 import Edge from "./models/edge";
 
-class Map {
+export class MindMap {
     constructor({ id }) {
         this.id = id;
         this.nodes = [];
@@ -31,5 +31,3 @@ class Map {
         };
     }
 }
-
-export default Map;

@@ -1,9 +1,12 @@
-import React from 'react';
+import * as React from 'react';
 import './mapPage.css';
 import vis from 'vis';
 import { EMPTY_OBJECT } from '../../constants';
 
 class MapPage extends React.PureComponent {
+
+    map: any
+    container: HTMLElement | null = null;
 
     EMPTY_DATA = {
         edges: [{ from: 1, to: 1 }],
