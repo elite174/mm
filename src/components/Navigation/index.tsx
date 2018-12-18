@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
-import './navigation.css';
-import { withMods } from '../../utils';
+import './navigation.scss';
+import { cn } from 'recn';
+
+const cnNavigation = cn('Navigation');
 
 const Navigation = withRouter(({ location }) => {
-    return <div className='navigation'>
+    return <div className={cnNavigation()}>
         {[
             {
                 path: '/',
@@ -16,7 +18,7 @@ const Navigation = withRouter(({ location }) => {
                 text: 'Map'
             }
         ].map(route => <Link key={route.path}
-            className={withMods('navigation__item', { active: location.pathname === route.path })}
+            className={cnNavigation('Item', { active: location.pathname === route.path })}
             to={route.path}>
             {route.text}</Link>)}
     </div>

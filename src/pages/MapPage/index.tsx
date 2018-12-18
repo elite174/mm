@@ -1,7 +1,10 @@
 import * as React from 'react';
-import './mapPage.css';
+import './mapPage.scss';
 import vis from 'vis';
 import { EMPTY_OBJECT } from '../../constants';
+import { cn } from 'recn';
+
+export const cnMapPage = cn('MapPage');
 
 class MapPage extends React.PureComponent {
 
@@ -22,11 +25,11 @@ class MapPage extends React.PureComponent {
     }
 
     render() {
-        return (<div className='map-page'>
-            <div className='map-page__left'>
-                <div className='map-page__map' ref={container => this.container = container}></div>
+        return (<div className={cnMapPage()}>
+            <div className={cnMapPage('Left')}>
+                <div className={cnMapPage('Map')} ref={container => this.container = container}></div>
             </div>
-            <div className='map-page__toolbar'></div>
+            <div className={cnMapPage('Toolbar')}></div>
         </div>)
     }
 }

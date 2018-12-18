@@ -1,4 +1,4 @@
-.button{
+.Button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -8,12 +8,13 @@
     color: var(--text);
     transition-property: color;
     transition-duration: var(--duration);
-}
 
-.button:hover{
-    color: var(--text-emph);
-}
 
-.button_uppercase{
-    text-transform: uppercase;
+    &:hover {
+        color: var(--text-emph);
+    }
+
+    &_uppercase {
+        text-transform: uppercase;
+    }
 }

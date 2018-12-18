@@ -10,7 +10,7 @@ class App extends React.Component {
         return (
             <React.Fragment>
                 <Navigation />
-                <div className='content'>
+                <div className='Content'>
                     <Route path='/' exact component={MenuPage} />
                     <Route path='/map' exact component={MapPage} />
                 </div>

@@ -1,0 +1,25 @@
+.MapPage {
+    height: 100%;
+    display: flex;
+
+    &-Container {
+        height: 100%;
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+    &-Toolbar {
+        height: 100%;
+        width: 150px;
+        flex-shrink: 0;
+        background-color: aliceblue;
+    }
+
+    &-Left {
+        width: 100%;
+    }
+
+    &-Map {
+        height: 100%;
+    }
+}

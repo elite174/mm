@@ -1,0 +1,18 @@
+.Navigation {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+
+    &-Item {
+        padding: 0 15px;
+        text-decoration: none;
+        color: var(--text);
+
+
+        &_active {
+            color: royalblue;
+        }
+    }
+}
