@@ -2,13 +2,17 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     cursor: pointer;
+
     padding: 5px 10px;
+    
+    border: 1px solid var(--border);
+    border-radius: 4px;
     text-transform: capitalize;
     color: var(--text);
     transition-property: color;
     transition-duration: var(--duration);
-
 
     &:hover {
         color: var(--text-emph);
@@ -16,5 +20,9 @@
 
     &_uppercase {
         text-transform: uppercase;
+    }
+
+    &_withIcon{
+        padding: 5px 10px 5px 5px;
     }
 }

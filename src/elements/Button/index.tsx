@@ -18,17 +18,19 @@ interface IButtonProps {
 const Button: React.SFC<IButtonProps> = ({
     onClick = EMPTY_FUNC,
     mods = EMPTY_OBJECT,
-    icon = null,
-    iconIsMaterial = false,
     iconMods = EMPTY_OBJECT,
-    caption = ''
+    icon,
+    iconIsMaterial = false,
+    caption
 }) => {
-    return <div
-        className={cnButton(mods)}
-        onClick={onClick}>
-        {icon && <Icon name={icon} mods={iconMods} material={iconIsMaterial} />}
-        {caption}
-    </div>
+    return (
+        <div
+            className={cnButton(Object.assign(mods, { withIcon: !!icon }))}
+            onClick={onClick}>
+            {icon && <Icon name={icon} mods={iconMods} material={iconIsMaterial} />}
+            {caption}
+        </div>
+    );
 }
 
 export default Button

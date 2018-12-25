@@ -1,0 +1,21 @@
+.MapPage {
+    &-Input {
+        display: flex;
+        flex-shrink: 0;
+
+        padding: 0 10px;
+        height: 30px;
+    }
+
+    &-InputElem {
+        flex-shrink: 1;
+
+        width: 100%;
+        margin-right: 10px;
+        padding: 0 5px;
+
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        outline: none;
+    }
+}

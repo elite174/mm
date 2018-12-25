@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Route } from 'react-router';
 import Navigation from '../Navigation';
 import MenuPage from '../../pages/MenuPage';
-import MapPage from '../../pages/MapPage';
+import { MapPage } from '../../pages/MapPage/MapPage';
 import './app.css';
 
 class App extends React.Component {
